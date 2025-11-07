@@ -159,9 +159,12 @@ aws configure
   Also, go to AWS EC2, you should see to machines got created
 ```
 
-- <b id="Sonar">Install and configure SonarQube (Master machine)</b>
+- <bInstall and configure SonarQube (Master machine)</b>
 ```bash
 docker run -itd --name SonarQube-Server -p 9000:9000 sonarqube:lts-community
+```
+```bash
+Got to the link: <ec2-machine-ip>:9000/ and setup account
 ```
 #
 - <b id="Trivy">Install Trivy (Jenkins Master)</b>
