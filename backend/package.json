@@ -2,7 +2,8 @@
   "name": "inventory-backend",
   "version": "1.0.0",
   "description": "testing",
-  "main": "server.js",
+  "type": "module",
+  "main": "server.mjs",
   "scripts": {
     "dev": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
