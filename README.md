@@ -380,8 +380,9 @@ Jenkins > manage > Syatem > Global Trusted Pipeline Libraries
   File: updatebackendnew.sh > change INSTANCE_ID=<ec2-node-machine-ID where your app will be running>
 ```
 
-## Clean Up
+## ⚠️ Clean Up EKS Cluster to save money
 - <b id="Clean">Delete eks cluster</b>
 ```bash
 eksctl delete cluster --name=mega --region=us-west-2
+Delete the master machine
 ```
