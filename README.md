@@ -250,14 +250,14 @@ Input: Name = OWASP > Check Mark: Install automatically > + Add installer > Sele
 Go to <machine_ip>:9000
 Create SonarQube Token:
   - Administration > Security > users > Tokens
-  - Generate the token and copy it, store it to Jenkins > Credentials > Global Credentials (add here)
+  - Generate the token and copy it, store it to Jenkins > Credentials > Global Credentials > Kind: Secret text
   - Connect the created Sonar TOKEN with Jenkins > Tools > Search: SonarQube Scanner installations
-  - Hit: Add SonarQube Scanner > Name: Sonar > CheckMark: Install Automatically > Install from Maven Central
+  - Hit: Add SonarQube Scanner > Name: Sonar > CheckMark: Install Automatically > Install from Maven Central > Save
 ```
 ## Integrate SonarQube with Jenkins
 ```bash
   Jenkins > manage > system > SonarQube servers > SonarQube installations:
-  Name: Sonar > Server URL: <Machine_IP>:9000 > Server authentication token: Select from dropdown
+  Name: Sonar > Server URL: <Machine_IP>:9000 > Server authentication token: Select sonar-key from dropdown
 ```
 
 ## Add GitHub PAT Key to Jenkins
