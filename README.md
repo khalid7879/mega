@@ -337,7 +337,7 @@ Create SonarQube Token:
 ## Add Cluster in Argocd
 ```bash
   Login to ArgoCD in terminal (master machine terminal):
-    - argocd login <argocd-url> --username admin
+    $ argocd login <argocd-url> --username admin
       example: argocd login 44.255.55.146:32672 --username admin
 
   Check ArgoDC Cluster List:
